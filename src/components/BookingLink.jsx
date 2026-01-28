@@ -1,5 +1,4 @@
-import CopyIcon from "@/assets/icons/CopyIcon"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { RxCopy } from "react-icons/rx";
 const BookingLink = () => {
