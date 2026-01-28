@@ -15,9 +15,6 @@ const AppointmentTable = () => {
         ...paginationTableData,
         ...paginationTableData,
         ...paginationTableData,
-        ...paginationTableData,
-        ...paginationTableData,
-        ...paginationTableData
     ]
     const [page,setPage] = useState(1)
     const pagesCount = Math.ceil(dataArray.length / 6)
