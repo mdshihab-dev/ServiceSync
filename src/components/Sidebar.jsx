@@ -8,7 +8,7 @@ const Sidebar = () => {
     const { pathname } = useLocation()
 
     return (
-        <div className='h-lvh flex flex-col bg-primary pt-9.5 pb-13 border border-borderColor'>
+        <div className=' h-screen sticky top-0 flex flex-col bg-primary pt-9.5 pb-13 border border-borderColor'>
             <div className="w-fit mx-auto">
                 <img src={logo} alt="logo" />
             </div>

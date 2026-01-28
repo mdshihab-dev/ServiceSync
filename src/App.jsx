@@ -6,7 +6,6 @@ import Appointments from "./pages/Appointments";
 import Settings from "./pages/Settings";
 import Layout from "./components/layout/layout";
 
-
 const routes = createRoutesFromElements(
   <>
     <Route Component={Layout}>

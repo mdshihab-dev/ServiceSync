@@ -10,9 +10,7 @@ const CardsGroup = () => {
             <Card title={card.title} value={card.value} percent={card.percent} posIcon={card.icon} faild={card.faild} />
         </div>
         )
-     }
-       
-        
+     }  
     </div>
 
   )

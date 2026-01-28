@@ -4,7 +4,7 @@ const Card = ({ preIcon, posIcon, value, title, percent,faild }) => {
   let {pathname} = useLocation();
 
   return (
-    <div className={` w-full color-card-bg p-6 rounded-2xl flex gap-2 font-inter justify-between`}>
+    <div className={` color-card-bg p-6 rounded-2xl flex gap-2 font-inter justify-between`}>
       <div className="flex flex-col flex-1 gap-2">
         <div className="flex gap-3">
           {preIcon && <div className="">{preIcon}</div>}

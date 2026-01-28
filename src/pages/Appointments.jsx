@@ -1,8 +1,14 @@
-import React from 'react'
+import AppoinmentCardGroup from '@/components/AppoinmentCardGroup'
+import BookingLink from '@/components/BookingLink'
+import Pagination from '@/components/Pagination'
 
 const Appointments = () => {
   return (
-    <div className=' text-white'>Appointments</div>
+    <section  className=' mr-6 '>
+      <AppoinmentCardGroup/>
+      <BookingLink/>
+      <Pagination/>
+    </section>
   )
 }
 
