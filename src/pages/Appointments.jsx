@@ -4,7 +4,7 @@ import Pagination from '@/components/Pagination'
 
 const Appointments = () => {
   return (
-    <section  className=' pr-6 max-w-svw'>
+    <section  className=' px-2 md:mx-0 md:pr-6 overflow-hidden w-full'>
       <AppoinmentCardGroup/>
       <BookingLink/>
       <Pagination/>

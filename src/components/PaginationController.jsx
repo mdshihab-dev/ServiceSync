@@ -26,24 +26,28 @@ const PaginationController = ({currentPage,totalPages,pageChanger}) => {
         pageNumbers.push(totalPages)
 
   return (
-    <div className=" flex justify-center">
+    <div className=" flex items-center justify-center">
         <div className=" flex items-center">
             <button disabled={currentPage <= 1} onClick={()=> pageChanger(currentPage - 1)} className={`${currentPage <= 1 ? 'cursor-no-drop text-[#697077]' : 'cursor-pointer text-blue'} p-2 flex items-center gap-x-2 font-inter font-medium text-base leading-[100%]  tracking-[0.5px] `}>
                 <PrevArrowIcon/>
-                Previous
+                <span className=" hidden md:flex">
+                    Previous
+                </span>
             </button>
 
             {
                 pageNumbers.map((item,index)=>
                     <button disabled={item === '...'} onClick={()=> pageChanger(item)} key={index} className={`${currentPage === item ? 'bg-[#A6C8FF]' : ' bg-transparent'} 
-                    ${item === '...' ? "cursor-no-drop" : 'cursor-pointer'} h-10 w-10.5 flex items-center justify-center font-inter font-medium text-base leading-[100%]  tracking-[0.5px] text-blue`}>
+                    ${item === '...' ? "cursor-no-drop" : 'cursor-pointer'} size-6 md:h-10 md:w-10.5 flex items-center justify-center font-inter font-medium text-sm md:text-base leading-[100%]  tracking-[0.5px] text-blue`}>
                         {item}
                     </button>
                 )
             }
 
             <button disabled={currentPage >= totalPages} onClick={()=> pageChanger(currentPage + 1)} className={`${currentPage >= totalPages ? 'cursor-no-drop text-[#697077]' : 'cursor-pointer  text-blue '} p-2 flex items-center gap-x-2 font-inter font-medium text-base leading-[100%]  tracking-[0.5px]`}>
-                Next
+                <span className=" hidden md:flex">
+                    Next
+                </span>
                 <NextArrowIcon/>
             </button>
         </div>

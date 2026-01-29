@@ -26,7 +26,7 @@ const AppointmentTable = () => {
      const paginatedData = dataArray.slice(start,end)
 
     return (
-        <>
+        <section >
             <Table className={'text-white text-center rounded-[16px] overflow-x-scroll  lg:overflow-hidden '}>
             <TableHeader>
                 <TableRow className={'border-[#162F61] bg-[#111b3b]'}>
@@ -56,10 +56,10 @@ const AppointmentTable = () => {
             </TableBody>
         </Table>
 
-        <div className=" mt-11.25 mb-5">
+        <div className="my-5 md:mt-11.25 md:mb-5">
             <PaginationController currentPage={page} totalPages={totalPage} pageChanger={setPage}/>
         </div>
-        </>
+        </section>
     )
 }
 

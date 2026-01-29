@@ -13,7 +13,7 @@ const Sidebar = () => {
                 <img src={logo} alt="logo" className=" scale-75 md:scale-100" />
             </Link>
             {/* ============ Menu Items ============ */}
-            <ul className='mt-18 font-medium text-base leading-[150%] text-white px-2 space-y-7'>
+            <ul className='mt-10 md:mt-18 font-medium text-base leading-[150%] text-white px-2 space-y-7'>
                 {
                 menuItems.map((item, index) => (
                     <li key={index}>
