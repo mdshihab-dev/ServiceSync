@@ -58,13 +58,13 @@ const Graph = () => {
   return (
     <Card
       className={
-        "min-w-full max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] "
+        " md:min-w-full max-h-106.5 bg-[#0F172B50] border border-[#2B7FFF20] "
       }
     >
       <CardHeader>
         <div className="flex justify-between">
           <div>
-            <CardTitle className={"mb-1 text-white"}>Call Trends - This Week</CardTitle>
+            <CardTitle className={"mb-1 text-white text-xl"}>Call Trends - This Week</CardTitle>
             <CardDescription>Total: 472 calls</CardDescription>
           </div>
           <div>

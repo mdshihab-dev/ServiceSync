@@ -27,7 +27,7 @@ const AppointmentTable = () => {
 
     return (
         <>
-            <Table className={'text-white text-center rounded-[16px]  overflow-hidden'}>
+            <Table className={'text-white text-center rounded-[16px] overflow-x-scroll  lg:overflow-hidden '}>
             <TableHeader>
                 <TableRow className={'border-[#162F61] bg-[#111b3b]'}>
                     <TableHead className={styleHeader}>Client Name</TableHead>

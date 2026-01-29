@@ -14,22 +14,22 @@ import WarningIcon from "@/assets/icons/WarningIcon"
 
 export const menuItems = [
    {
-        icon: <HomeIcon/>,
+        icon: <HomeIcon className={' size-6 md:size-8'}/>,
         text: 'Dashboard Overview',
         routeName: '/'
     },
     {
-        icon: <PhoneIcon/>,
+        icon: <PhoneIcon className={' size-6 md:size-8'}/>,
         text: 'Call Logs',
         routeName: '/call-history'
     },
     {
-        icon: <CalenderIcon/>,
+        icon: <CalenderIcon className={' size-6 md:size-8'}/>,
         text: 'Appointments',
         routeName: '/appointments'
     },
     {
-        icon: <SettingsIcon/>,
+        icon: <SettingsIcon className={' size-6 md:size-8'}/>,
         text: 'Settings',
         routeName: '/settings'
     },
@@ -42,38 +42,38 @@ export const cardsData = [
       title: 'Total Calls Today',
       value: '127',
       percent: '+12%',
-      icon: <CardPhoneIcon />
+      icon: <CardPhoneIcon className={' size-8 md:size-12'} />
     },
     { 
       title: 'AI-Handled Calls',
       value: '98',
       percent: '+77%',
-      icon: <CardBotIcon />
+      icon: <CardBotIcon className={' size-8 md:size-12'}/>
     },
     {
       title: 'Warm Transfer',
       value: '23',
       percent: '+18%',
-      icon: <CardTransferIcon />
+      icon: <CardTransferIcon className={' size-8 md:size-12'}/>
     },
     {
       title: 'Appointments Booked',
       value: '34',
       percent: '+8%',
-      icon: <CardCalenderIcon />
+      icon: <CardCalenderIcon className={' size-8 md:size-12'}/>
     },
     {
       title: 'Missed/Failed Calls',
       value: '6',
       percent: '-3%',
       faild: true,
-      icon: <CardFailedIcon />
+      icon: <CardFailedIcon className={' size-8 md:size-12'}/>
     },
     {
       title: 'Avg Call Duration',
       value: '3:42',
       percent: '+15%',
-      icon: <CardClockIcon />
+      icon: <CardClockIcon className={' size-8 md:size-12'} />
     }
 ]
 
