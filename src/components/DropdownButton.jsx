@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropdownIcon from "../assets/icons/DropdownIcon";
+import DropdownIcon from "@/assets/icons/DropdownIcon ";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -38,21 +38,6 @@ const DropdownButton = ({ items }) => {
               {item}
             </DropdownMenuCheckboxItem>
           ))}
-
-          {/* <DropdownMenuCheckboxItem
-            checked={range === "This Month"}
-            onCheckedChange={setShowActivityBar}
-            onSelect={() => setRange("This Month")}
-          >
-            This Month
-          </DropdownMenuCheckboxItem>
-          <DropdownMenuCheckboxItem
-            checked={range === "This Year"}
-            onCheckedChange={setShowPanel}
-            onSelect={() => setRange("This Year")}
-          >
-            This Year
-          </DropdownMenuCheckboxItem> */}
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>
