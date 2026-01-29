@@ -6,7 +6,7 @@ const EditProfile = () => {
 
   return (
     <div className="pt-6 max-w-250">
-      <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3 border-b border-borderBottom pb-2">
+      <div className="font-inter font-normal text-2xl leading-9 text-white flex gap-x-16 ml-3 border-b border-[#192d70] pb-2">
         <button className={"border-b-2 -mb-2 px-3 border-b-[#87A2FF]"}>
           Profile
         </button>
@@ -39,7 +39,7 @@ const EditProfile = () => {
                 type={field.type}
                 placeholder={field.placeholder}
                 className="font-inter font-normal text-base leading-6 text-white
-                   bg-formbg border border-formborder
+                   bg-[#0e152e] border border-[#0b4540]
                    py-3 px-4 rounded-[14px]"
               />
             </div>
@@ -48,7 +48,7 @@ const EditProfile = () => {
              {/* ===================== profile button ===================== */}
 
         <div className="mt-20 flex items-center justify-center cursor-pointer">
-          <button className="py-2 px-39 bg-[#00C950] font-inter font-bold text-[20px] leading-[150%] text-white rounded-3xl">
+          <button className="py-2 px-39 bg-[#00C950] cursor-pointer font-inter font-bold text-[20px] leading-[150%] text-white rounded-3xl">
             Save
           </button>
         </div>

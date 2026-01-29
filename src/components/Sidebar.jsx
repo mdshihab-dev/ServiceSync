@@ -17,7 +17,7 @@ const Sidebar = () => {
                 {
                 menuItems.map((item, index) => (
                     <li key={index}>
-                        <Link to={item.routeName} className={` py-1 px-2 flex items-center gap-4 rounded-xl ${pathname ==  item.routeName ? 'inset-shadow border-b border-[rgba(255,255,255,0.50)]' : ''}`}>
+                        <Link to={item.routeName} className={` py-1 px-2 flex items-center gap-4 rounded-xl ${pathname == item.routeName || pathname.includes(item.text.toLowerCase()) ? 'inset-shadow border-b border-[rgba(255,255,255,0.50)]' : ''}`}>
                             <span className="  text-white flex items-center justify-center ">
                                 {item.icon}
                             </span>

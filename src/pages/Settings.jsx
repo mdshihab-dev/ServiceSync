@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, } from "react-router";
 import profileImage from "../assets/images/profile-image.png";
 
 const Settings = () => {

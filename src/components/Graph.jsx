@@ -64,7 +64,7 @@ const Graph = () => {
       <CardHeader>
         <div className="flex justify-between">
           <div>
-            <CardTitle className={"mb-1"}>Call Trends - This Week</CardTitle>
+            <CardTitle className={"mb-1 text-white"}>Call Trends - This Week</CardTitle>
             <CardDescription>Total: 472 calls</CardDescription>
           </div>
           <div>
