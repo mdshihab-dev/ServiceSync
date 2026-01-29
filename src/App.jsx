@@ -5,7 +5,7 @@ import CallHistory from "./pages/CallHistory";
 import Appointments from "./pages/Appointments";
 import Settings from "./pages/Settings";
 import EditProfile from "./pages/EditProfile";
-import Layout from "./components/layout/layout";
+import Layout from "./components/layout/Layout";
 
 const routes = createRoutesFromElements(
   <>
