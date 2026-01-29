@@ -32,7 +32,7 @@ const CallHistory = () => {
         <div className="flex flex-col gap-6 grow max-w-1/2 ">
           <InputInputGroup
           icon={<SearchIcon />}
-          className={"color-[#142b5e] pl-4 h-12.5   "}
+          className={" color-card-bg pl-4 h-12.5   "}
           />
           
           <CallList active={active} setActive={setActive} />

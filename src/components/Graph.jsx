@@ -32,7 +32,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
-import DropDownIcon from "@/assets/icons/DropDownIcon";
+import DropDownIcon from "../assets/icons/DropdownIcon ";
 
 const chartData = [
   { day: "Mon", value: 46 },
