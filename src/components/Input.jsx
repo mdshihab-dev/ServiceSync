@@ -6,7 +6,7 @@ import {
   InputGroupText,
 } from "@/components/ui/input-group"
 
-export function InputInputGroup({icon, label, className }) {
+export function SearchBar({icon, label, className }) {
   return (
     <Field >
       { label && <FieldLabel htmlFor="input-group-url">{label}</FieldLabel>}

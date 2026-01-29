@@ -1,4 +1,4 @@
-import { InputInputGroup } from '@/components/Input';
+import { SearchBar } from '@/components/Input';
 import { SearchIcon } from "lucide-react";
 import DropdownButton from "../components/DropdownButton";
 import CallList from "../components/CallList";
@@ -7,16 +7,8 @@ import {callLogsData} from '../projectData/data'
 import { useState } from "react";
 
 const CallHistory = () => {
-
-  const [active, setActive] = useState(callLogsData[0])
-
-  const issueArray = [
-    "All Issues",
-    "Screen",
-    "Software",
-    "Battery",
-    "Unknown",
-  ];
+  const [active, setActive] = useState(callLogsData[0]);
+  const issueArray = ["All Issues", "Screen", "Software", "Battery", "Unknown"];
   const callType = [
     "All Type",
     "AI Resolved",
@@ -26,30 +18,33 @@ const CallHistory = () => {
   ];
   const dateArray = ["Today", "Last Week", "Last Month", "This Year", "All"];
   return (
-    <div className="m-6">
-      <div className="flex justify-between gap-6 ">
-        
-        <div className="flex flex-col gap-6 grow max-w-1/2 ">
-          <InputInputGroup
-          icon={<SearchIcon />}
-          className={" color-card-bg pl-4 h-12.5   "}
+    <section className="m-2 sm:m-6 flex flex-col sm:gap-6 gap-4">
+      <div className="flex flex-wrap md:flex-nowrap justify-between gap-6 ">
+        <div className="grow w-full md:max-w-1/2 ">
+          <SearchBar
+            icon={<SearchIcon />}
+            className={"color-card pl-4 h-12.5   "}
           />
-          
-          <CallList active={active} setActive={setActive} />
+        </div>
+        <div className="grow md:max-w-1/2 ">
+          <div className="flex sm:gap-6 justify-end">
+            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={callType} />
+            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={issueArray} />
+            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={dateArray} />
+          </div>
+        </div>
+      </div>
 
+      <div className="flex flex-wrap md:flex-nowrap justify-between gap-6 ">
+        <div className="flex flex-col gap-6 grow md:max-w-1/2 text-white ">
+          <CallList active={active} setActive={setActive} />
         </div>
 
-        <div className="flex flex-col gap-6 grow max-w-1/2 ">
-          <div className="flex gap-6 justify-end">
-            <DropdownButton items={callType} />
-            <DropdownButton items={issueArray} />
-            <DropdownButton items={dateArray} />
-          </div>
-
+        <div className="flex flex-col gap-6 grow md:max-w-1/2 ">
           <CallDetails data={active} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
