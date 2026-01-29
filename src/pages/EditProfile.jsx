@@ -39,7 +39,7 @@ const EditProfile = () => {
                 type={field.type}
                 placeholder={field.placeholder}
                 className="font-inter font-normal text-base leading-6 text-white
-                   bg-formbg border border-formborder
+                   bg-[#0d1229] border border-[#0a423e]
                    py-3 px-4 rounded-[14px]"
               />
             </div>

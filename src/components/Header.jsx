@@ -11,6 +11,7 @@ const Header = () => {
         {pathname === '/call-history' && 'Call Logs'}
         {pathname === '/appointments' && 'Appointments'}
         {pathname === '/settings' && 'Settings'}
+        {pathname === '/settings/profile' && 'Settings'}
       </h1>
 
       <div className=" flex items-center justify-end md:justify-center space-x-2.5 md:space-x-10">
