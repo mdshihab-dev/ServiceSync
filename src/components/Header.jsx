@@ -1,6 +1,5 @@
 import { useLocation } from "react-router"
 import avater from "../assets/images/avatar.png"
-import { MdNotificationsNone } from "react-icons/md";
 import NotificationIcon from "@/assets/icons/NotificationIcon";
 const Header = () => {
   const {pathname} = useLocation()

@@ -2,7 +2,6 @@
 const NotificationIcon = ({className}) => {
   return (
     <svg
-     
       viewBox="0 0 21 26"
       fill="none"
       className={className}

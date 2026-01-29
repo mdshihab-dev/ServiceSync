@@ -15,7 +15,7 @@ const DropdownButton = ({ items }) => {
   const [range, setRange] = useState(items[0]);
 
   return (
-    <DropdownMenu>
+    <DropdownMenu >
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
