@@ -3,8 +3,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow} from "@/
 import {paginationTableData} from '../projectData/data'
 import PaginationController from "./PaginationController"
 import { useState } from "react"
-    const styleHeader = "text-white py-4.5 font-inter text-sm leading-5 text-center"
-    const styleChildren = "py-4.5 font-arimo text-sm leading-5" 
+    const styleHeader = "text-white py-4.5 font-inter text-[10px] sm:text-sm leading-5 text-center"
+    const styleChildren = "py-4.5 font-arimo text-[10px] sm:text-sm leading-5" 
 
 const AppointmentTable = () => {
     const dataArray = [
