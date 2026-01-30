@@ -2,7 +2,7 @@ import RequestBar from './RequestBar'
 
 const Request = () => {
   return (
-    <div className=' w-full md:max-w-1/2 p-3 md:p-6 grow font-arimo rounded-[12px] md:rounded-[16px] bg-card-bg border border-borderColor'>
+    <div className=' w-full md:max-w-1/2 p-3 md:p-6 grow font-arimo rounded-[12px] md:rounded-[16px] bg-[#111b3b] border border-borderColor'>
         <h3 className=" font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Top Repair Requests
       </h3>
