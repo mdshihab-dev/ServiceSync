@@ -2,7 +2,7 @@ import {activitiesData} from "../projectData/data";
 
 const RecentActivity = () => {
   return (
-    <div className=" grow w-full md:max-w-1/2 p-3 md:p-6 rounded-[12px] md:rounded-[16px] bg-[#111b3b]">
+    <div className=" grow w-full md:max-w-1/2 p-3 md:p-6 rounded-[12px] md:rounded-[16px] bg-[#111b3b] border border-[#162e61]">
       <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer">
         Recent Activity
       </h3>
