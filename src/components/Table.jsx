@@ -26,7 +26,7 @@ const AppointmentTable = () => {
      const paginatedData = dataArray.slice(start,end)
 
     return (
-        <section className="max-sm:max-w-[82dvw] max-md:max-w-[88dvw] max-lg:max-w-[63dvw]" >
+        <section className="max-sm:max-w-[82dvw] max-md:max-w-[88dvw] max-lg:max-w-[63dvw] lg:w-full" >
             <Table className={'text-white w-full text-center rounded-[16px] overflow-x-scroll  lg:overflow-hidden '}>
             <TableHeader>
                 <TableRow className={'border-[#162F61] bg-[#111b3b]'}>
