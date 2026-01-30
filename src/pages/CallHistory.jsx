@@ -27,10 +27,10 @@ const CallHistory = () => {
           />
         </div>
         <div className="grow md:max-w-1/2 ">
-          <div className="flex sm:gap-6 justify-end">
-            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={callType} />
-            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={issueArray} />
-            <DropdownButton className={'bg-primary text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={dateArray} />
+          <div className="flex gap-1 sm:gap-6 max-sm:justify-around sm:justify-end">
+            <DropdownButton className={'bg-primary max-sm:text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={callType} />
+            <DropdownButton className={'bg-primary max-sm:text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={issueArray} />
+            <DropdownButton className={'bg-primary max-sm:text-sm sm:text-base max-w-27.5 sm:max-w-full overflow-hidden  '} items={dateArray} />
           </div>
         </div>
       </div>

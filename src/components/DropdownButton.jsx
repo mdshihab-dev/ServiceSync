@@ -19,7 +19,7 @@ const DropdownButton = ({ items }) => {
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className={"bg-[#1D293D] border border-[#2B7FFF20] text-white"}
+          className={"bg-[#1D293D] max-sm:w-23 max-sm:rounded-[4px] sm:rounded-[8px] md:rounded-[10px] border border-[#2B7FFF20] text-white"}
         >
           {range} <DropdownIcon />
         </Button>

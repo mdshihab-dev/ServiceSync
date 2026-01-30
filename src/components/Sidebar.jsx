@@ -9,9 +9,9 @@ const Sidebar = () => {
 
     return (
         <div className=' h-screen sticky top-0 flex flex-col bg-primary pt-5 md:pt-9.5 pb-13 border border-borderColor'>
-            <Link to='/' className="w-fit mx-auto">
+            <div className="w-fit mx-auto">
                 <img src={logo} alt="logo" className=" scale-75 md:scale-100" />
-            </Link>
+            </div>
             {/* ============ Menu Items ============ */}
             <ul className='mt-10 md:mt-18 font-medium text-base leading-[150%] text-white px-2 space-y-7'>
                 {
