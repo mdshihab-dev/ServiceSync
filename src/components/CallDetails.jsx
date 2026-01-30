@@ -5,14 +5,14 @@ import PaperIcon from "../assets/icons/PaperIcon";
 
 const CallDetails = ({ data }) => {
   return (
-     <section className="rounded-3xl color-card  ">
-      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
+     <section className=" rounded-[12px] md:rounded-[16px] color-card-bg  ">
+      <h3 className="font-inter font-normal text-[20px] leading-7 text-white mb-2 sm:mb-4 cursor-pointer p-4 border-b border-[#2B7FFF20] ">
         Call Details
       </h3>
 
-      <div className="flex flex-col gap-6 p-3 sm:p-6 ">
+      <div className="flex flex-col max-sm:gap-3 sm:gap-6 p-3 sm:p-6 ">
 
-          <div className="flex ">
+          <div className="flex max-sm:flex-col sm:flex-row max-sm:gap-3 sm:gap-0">
             <div className="grow max-w-1/2">
               <span className="text-gray text-sm leading-5 ">Phone Number</span>
               <p className="text-white text-base leading-6 ">
@@ -26,7 +26,7 @@ const CallDetails = ({ data }) => {
             </div>
           </div>
 
-          <div className="flex">
+          <div className="flex max-sm:flex-col sm:flex-row max-sm:gap-3 sm:gap-0">
             <div className="grow max-w-1/2">
               <span className="text-gray text-sm leading-5 ">Date & Time</span>
               <p className="text-white text-base leading-6 ">{data.dateTime}</p>
@@ -58,13 +58,14 @@ const CallDetails = ({ data }) => {
           <p className="text-white text-base leading-6 ">{data.outcome}</p>
         </div>
 
+{/* ========================================================================= */}
         <Button
           className={
-            "audio-gradient flex justify-center w-full rounded-[14px] border border-[#AD46FF30] cursor-pointer "
+            "audio-gradient flex justify-center w-full rounded-[8px] md:rounded-[14px] border border-[#AD46FF30] cursor-pointer "
           }
         >
           <PlayIcon />
-          <p className="text-[#C27AFF]  ">Play Audio Recording</p>
+          <p className="text-[#C27AFF] ">Play Audio Recording</p>
         </Button>
 
         <div className="flex gap-2 items-center mb-3 text-info ">
@@ -76,7 +77,7 @@ const CallDetails = ({ data }) => {
 
         {data.transcript.length !== 0 ? (
           <>
-            <div className="bg-primary rounded-[14px] flex flex-col gap-3 p-3 sm:p-4  ">
+            <div className=" bg-[#162038] rounded-[12px] md:rounded-[14px] flex flex-col gap-3 p-3 sm:p-4  ">
               {data.transcript.map((item) => (
                 <div>
                   <p
