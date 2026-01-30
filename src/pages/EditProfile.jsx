@@ -5,7 +5,7 @@ import { profileFormData } from "../projectData/data";
 const EditProfile = () => {
 
   return (
-     <div className="px-2 md:px-0 md:pt-6 pt-4 md:max-w-250 max-w-[80%] pr-4 xl:pr-0">
+     <div className="px-2 md:px-0 md:pt-6 pt-4 md:max-w-250 w-full pr-2  md:pr-0">
       <div className="font-inter font-normal md:text-2xl text-base leading-9 text-white flex gap-x-4 sm:gap-x-16  ml-3 border-b border-[#0b423f] pb-2">
         <button className={"border-b-2 -mb-2 px-3 border-b-[#87A2FF]"}>
           Profile
@@ -14,7 +14,7 @@ const EditProfile = () => {
       </div>
 
       <div className="sm:mt-10 mt-6" >
-        <h3 className="font-inter font-normal text-base sm:text-xl leading-[150%] text-white mb-2">
+        <h3 className="font-inter font-normal max-sm:text-base sm:text-xl leading-[150%] text-white mb-2">
           Profile Image
         </h3>
 
@@ -28,19 +28,17 @@ const EditProfile = () => {
         </div>
 
         {/* ===================== profile form ===================== */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-y-6 gap-y-4  gap-x-14 md:mt-14 mt-7 w-auto">
+        <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 md:gap-y-6 gap-y-4  gap-x-14 md:mt-14 mt-7 w-auto">
           {profileFormData.map((field, index) => (
             <div key={index} className="flex flex-col gap-2">
-              <label className="font-inter font-medium sm:text-xl text-base leading-[150%] text-white">
+              <label className="font-inter font-medium sm:text-xl max-sm:text-base leading-[150%] text-white">
                 {field.label}
               </label>
 
               <input
                 type={field.type}
                 placeholder={field.placeholder}
-                className="font-inter font-normal text-base leading-6 text-white
-                   bg-[#0d1229] border border-[#0a423e]
-                   py-3 px-4 rounded-[14px]"
+                className="font-inter font-normal max-sm:text-sm sm:text-base leading-6 text-white bg-[#0d1229] border border-[#0a423e] py-3 px-4 max-sm:rounded-[10px] sm:rounded-[14px]"
               />
             </div>
           ))}
@@ -48,7 +46,7 @@ const EditProfile = () => {
              {/* ===================== profile button ===================== */}
 
         <div className="lg:mt-20 mt-8 mb-8  flex sm:items-center sm:justify-center justify-start  cursor-pointer">
-          <button className="py-2 lg:px-39 px-20  bg-[#00C950] font-inter font-bold sm:text-xl text-base leading-[150%] text-white rounded-3xl">
+          <button className="py-2 lg:px-39 px-20 w-full md:w-auto  bg-[#00C950] font-inter font-bold sm:text-xl text-base leading-[150%] text-white max-sm:rounded-[8px] sm:rounded-[12px] md:rounded-[16px]">
             Save
           </button>
         </div>

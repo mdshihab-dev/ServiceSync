@@ -44,7 +44,7 @@ const Settings = () => {
             <div className="mb-2 place-self-end">
               <Link
                 to={"/settings/profile"}
-                className={`py-1 px-2 rounded-xl inset-shadow border-b border-[rgba(255,255,255,0.50)]`}
+                className={`py-1 px-2 rounded-[12px] inset-shadow border-b border-[rgba(255,255,255,0.50)]`}
               >
                 <span className=" font-inter whitespace-nowrap font-medium sm:text-base text-xs leading-[150%] text-white">
                   Edit Profile
