@@ -12,23 +12,23 @@ const BookingLink = () => {
     }
 
   return (
-    <div className="mt-5 md:mt-0 p-2.5 md:p-6.25 w-full rounded-[12px] md:rounded-[16px] bg-linear-to-b from-[#1A1A2E] to-[#16213E]">
+    <div className="mt-5 md:mt-0 p-2.5 md:p-6.25 w-full max-sm:rounded-[8px] sm:rounded-[12px] md:rounded-[16px] bg-linear-to-b from-[#1A1A2E] to-[#16213E]">
         <h3 className=" font-inter font-normal text-sm md:text-base leading-6 text-white">
             Booking Link
         </h3>
 
-        <div className=" mt-2 md:mt-4 flex items-center justify-center gap-x-1.5 md:gap-x-3">
-            <div className=" cursor-pointer grow py-3.25 px-2 md:px-4 rounded-[8px] md:rounded-[14px] border border-[#0e4236] bg-[#111421] font-arimo font-normal text-[10px] sm:text-sm md:text-base leading-6 text-white">
+        <div className=" mt-2 md:mt-4 flex items-center justify-center gap-x-2 md:gap-x-3">
+            <div className=" cursor-pointer grow  w-full max-sm:py-1.5 sm:py-3.25 px-2 md:px-4 rounded-[8px] md:rounded-[14px] border border-[#0e4236] bg-[#111421] font-arimo font-normal text-[10px] sm:text-sm md:text-base leading-6 text-white">
                 https://techstore.com/book?id=store123
             </div>
-            <button onClick={()=> handleCopy()} className="inset-shadow-primary cursor-pointer rounded-[8px] bg-linear-to-b from-[#152252] to-[#111B3C] flex items-center justify-center gap-x-4 p-3 md:py-2.25 md:px-[11.5px] font-inter font-medium text-base leading-[150%] text-white">
+            <button onClick={()=> handleCopy()} className="inset-shadow-primary cursor-pointer rounded-[4px] md:rounded-[8px] bg-linear-to-b from-[#152252] to-[#111B3C] flex items-center justify-center gap-x-4 p-2 md:py-2.25 md:px-[11.5px] font-inter font-medium text-base leading-[150%] text-white">
                 {
                     copied ? 
-                    <FaCheck className={`${copied ? 'scale-100' : ' scale-0'}  transition-all duration-500 text-2xl`}/> 
+                    <FaCheck className={`${copied ? 'scale-100' : ' scale-0'}  transition-all duration-500 text-lg sm:text-xl md:text-2xl`}/> 
                     :
-                    <RxCopy className={`${copied ? 'scale-0' : 'scale-100'} transition-all duration-500 text-2xl`}/>
+                    <RxCopy className={`${copied ? 'scale-0' : 'scale-100'} transition-all duration-500 text-lg sm:text-xl md:text-2xl`}/>
                 }
-                <span className=" hidden md:flex">
+                <span className=" whitespace-nowrap max-md:hidden">
                     Copy Link
                 </span>
             </button>

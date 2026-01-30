@@ -5,16 +5,16 @@ import Table from '@/components/Table'
 
 const Appointments = () => {
   return (
-    <section  className=' px-2 md:mx-0 md:pr-6 w-full'>
-      <div className=' max-md:max-w-[90%]'>
+    <section  className=' px-2 overflow-hidden md:mx-0 lg:pr-6 max-w-full'>
+      <div className=''>
       <AppoinmentCardGroup/>
       </div>
-      <div className=' max-md:max-w-[90%]'>
+      <div className=''>
       <BookingLink/>
       </div>
-       <div className='mt-5 w-screen md:w-full md:mt-8'>
+       <div className='mt-5 flex justify-center md:mt-8'>
         <Table/>
-    </div>
+       </div>
     </section>
   )
 }
